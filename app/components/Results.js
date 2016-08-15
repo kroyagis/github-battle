@@ -27,6 +27,14 @@ function Results (props) {
     return(
       <MainContainer>
         <h1>It's a tie!</h1>
+        <div className='col-sm-8 col-sm-offset-2'>
+          <UserDetailsWrapper>
+            <UserDetails score={props.scores[0]} info={props.playersInfo[0]} />
+          </UserDetailsWrapper>
+          <UserDetailsWrapper>
+            <UserDetails score={props.scores[1]} info={props.playersInfo[1]} />
+          </UserDetailsWrapper>
+        </div>
         <StartOver />
       </MainContainer>
     )
